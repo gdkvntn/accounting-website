@@ -19,25 +19,34 @@
                 <nav class="header__nav">
                     <ul class="header__list">
                         <li class="header__item">
-                            <a href="#" class="header__link">Услуги</a>
+                            <a href="#services" class="header__link">Услуги</a>
                         </li>
                         <li class="header__item">
-                            <a href="#" class="header__link">Стоимость</a>
+                            <a href="#cost" class="header__link">Стоимость</a>
                         </li>
                         <li class="header__item">
-                            <a href="#" class="header__link">Контакты</a>
+                            <a href="#contacts" class="header__link">Контакты</a>
                         </li>
                         <li class="header__item">
-                            <button href="#" class="header__button green-button">Заказать услугу</button>
+                            <a href="#contacts" class="header__button green-button">Заказать услугу</a>
                         </li>
                     </ul>
+                    <div class="header__nav-close">
+                        <span class="header__nav-close-line"></span>
+                        <span class="header__nav-close-line"></span>
+                    </div>
                 </nav>
+                <div class="header__burger burger">
+                    <span class="burger__line burger__line-first"></span>
+                    <span class="burger__line burger__line-second"></span>
+                    <span class="burger__line burger__line-third"></span>
+                </div>
             </div>
         </div>
     </header>
     
     <main>
-        <section class="intro">
+        <section class="intro" name="intro"> 
             <div class="wrapper">
                 <div class="intro__wrapper">
                     <div class="intro-info">
@@ -48,11 +57,14 @@
                             И закрываем любую потребность независимо от масштаба Вашей компании. Всегда прозрачные и разумные цены!
                         </p>
                     </div>
+                    <div class="pic">
+                        
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section class="outsourcing">
+        <section class="outsourcing" id="outsourcing">
             <div class="wrapper">
                 <div class="outsourcing__wrapper">
                     <div class="outsourcing-left">
@@ -68,9 +80,10 @@
                             <li class="outsourcing-item"><img src="/img/checkbox.svg" alt="checkbox" class="checkbox-img">Проводим ежемесячный предварительный расчет налогов (прогнозирование налоговой нагрузки).</li>
                             <li class="outsourcing-item"><img src="/img/checkbox.svg" alt="checkbox" class="checkbox-img">Вы можете передать нам на управление как всю бухгалтерию, так и отдельные блоки.</li>
                         </ul>
-                            <input type="button" value="Заказать услугу" class="outsourcing-btn green-button vc">
-                            <a href="#" class="see-price vc">Посмотреть стоимость </a>
-                            
+                        
+                            <a href="#contacts" class="outsourcing-btn green-button ">Заказать услугу</a>
+                            <a href="#cost" class="see-price vc">Посмотреть стоимость </a>
+                        
                     </div>
                         <div class="outsourcing-right">
                             <img src="/img/outsourcing.svg" alt="outsourcing-img" class="outsourcing-img">
@@ -81,7 +94,7 @@
                 </div>
         </section>
 
-        <section class="services">
+        <section class="services" id="services">
             <div class="wrapper">
                 <div class="services-title">
                     <h3>
@@ -159,76 +172,150 @@
             </div>
         </section>
 
-        <section class="cost">
+        <section class="cost" id="cost">
             <div class="wrapper">
                 <div class="cost__wrapper">
                     <h2 class="cost__title">
                         Стоимость услуг <br>по бухгалтерскому обслуживанию
                     </h2>
                     <div class="cost__choice">
-                        <a href="#" class="cost__legal">Для юридических лиц</a>
-                        <a href="#" class="cost__individual">Для индивидуальных предпринимателей</a>
+                        
+                        <input type="button" autofocus value="Для юридических лиц" class="cost__legal">
+                        <input type="button"  value="Для индивидуальных предпринимателей" class="cost__individual">
+                        
                     </div>
                     <div class="cost__wrapper-table">
-                        <table class="cost__table">
-                            <tr>
-                                <th class="cost__table-head">Количество первичных документов,<br> обрабатываемых в месяц**</th>
-                                <th class="cost__table-head">Упрощенная система налогообложения <br>(УСН)</th>
-                                <th class="cost__table-head">Упрощенная система налогообложения (УСН) <br> с уплатой НДС</th>
-                                <th class="cost__table-head">Общая система<br> налогообложения<br> (ОСН)</th>
-                                <th class="cost__table-head">Количество<br> сотрудников</th>
-                            </tr>
-                            <tr class="cost__table-line">
-                                <td class="cost__table-text">Нулевая отчетность (нет<br> деятельности)</td>
-                                <td class="cost__table-text">40 руб. в квартал</td>
-                                <td class="cost__table-text">60 руб. в квартал</td>
-                                <td class="cost__table-text">80 руб. в квартал</td>
-                                <td class="cost__table-text">-</td>
-                            </tr>
-                            <tr class="cost__table-line">
-                                <td class="cost__table-text">До 15 документов</td>
-                                <td class="cost__table-text">130 руб. в месяц</td>
-                                <td class="cost__table-text">200 руб. в месяц</td>
-                                <td class="cost__table-text">250 руб. в месяц</td>
-                                <td class="cost__table-text">До 3-х человек</td>
-                            </tr>
-                            <tr class="cost__table-line">
-                                <td class="cost__table-text">От 16 до 35 документов</td>
-                                <td class="cost__table-text">180 руб. в месяц</td>
-                                <td class="cost__table-text">260 руб. в месяц</td>
-                                <td class="cost__table-text">330 руб. в месяц</td>
-                                <td class="cost__table-text">До 3-х человек</td>
-                            </tr>
-                            <tr class="cost__table-line">
-                                <td class="cost__table-text">От 36 до 55 документов</td>
-                                <td class="cost__table-text">230 руб. в месяц</td>
-                                <td class="cost__table-text">350 руб. в месяц</td>
-                                <td class="cost__table-text">430 руб. в месяц</td>
-                                <td class="cost__table-text">До 3-х человек</td>
-                            </tr>
-                            <tr class="cost__table-line">
-                                <td class="cost__table-text">От 56 до 75 документов</td>
-                                <td class="cost__table-text">280 руб. в месяц</td>
-                                <td class="cost__table-text">410 руб. в месяц</td>
-                                <td class="cost__table-text">530 руб. в месяц</td>
-                                <td class="cost__table-text">До 3-х человек</td>
-                            </tr>
-                            <tr class="cost__table-line">
-                                <td class="cost__table-text">От 76 до 100 документов</td>
-                                <td class="cost__table-text">350 руб. в месяц</td>
-                                <td class="cost__table-text">470 руб. в месяц</td>
-                                <td class="cost__table-text">650 руб. в месяц</td>
-                                <td class="cost__table-text">До 3-х человек</td>
-                            </tr>
-                            <tr class="cost__table-line">
-                                <td class="cost__table-text">Свыше 100 документов</td>
-                                <td class="cost__table-text">По договоренности</td>
-                                <td class="cost__table-text">По договоренности</td>
-                                <td class="cost__table-text">По договоренности</td>
-                                <td class="cost__table-text">До 3-х человек</td>
-                            </tr>
-                        </table>
+                        <div class="cost__table-div" >
+                            <table class="cost__table" >
+                                <tr>
+                                    <th class="cost__table-head">Количество первичных документов,<br> обрабатываемых в месяц**</th>
+                                    <th class="cost__table-head">Упрощенная система налогообложения <br>(УСН)</th>
+                                    <th class="cost__table-head">Упрощенная система налогообложения (УСН) <br> с уплатой НДС</th>
+                                    <th class="cost__table-head">Общая система<br> налогообложения<br> (ОСН)</th>
+                                    <th class="cost__table-head">Количество<br> сотрудников</th>
+                                </tr>
+                                <tr class="cost__table-line">
+                                    <td class="cost__table-text">Нулевая отчетность (нет<br> деятельности)</td>
+                                    <td class="cost__table-text">40 руб. в квартал</td>
+                                    <td class="cost__table-text">60 руб. в квартал</td>
+                                    <td class="cost__table-text">80 руб. в квартал</td>
+                                    <td class="cost__table-text">-</td>
+                                </tr>
+                                <tr class="cost__table-line">
+                                    <td class="cost__table-text">До 15 документов</td>
+                                    <td class="cost__table-text">130 руб. в месяц</td>
+                                    <td class="cost__table-text">200 руб. в месяц</td>
+                                    <td class="cost__table-text">250 руб. в месяц</td>
+                                    <td class="cost__table-text">До 3-х человек</td>
+                                </tr>
+                                <tr class="cost__table-line">
+                                    <td class="cost__table-text">От 16 до 35 документов</td>
+                                    <td class="cost__table-text">180 руб. в месяц</td>
+                                    <td class="cost__table-text">260 руб. в месяц</td>
+                                    <td class="cost__table-text">330 руб. в месяц</td>
+                                    <td class="cost__table-text">До 3-х человек</td>
+                                </tr>
+                                <tr class="cost__table-line">
+                                    <td class="cost__table-text">От 36 до 55 документов</td>
+                                    <td class="cost__table-text">230 руб. в месяц</td>
+                                    <td class="cost__table-text">350 руб. в месяц</td>
+                                    <td class="cost__table-text">430 руб. в месяц</td>
+                                    <td class="cost__table-text">До 3-х человек</td>
+                                </tr>
+                                <tr class="cost__table-line">
+                                    <td class="cost__table-text">От 56 до 75 документов</td>
+                                    <td class="cost__table-text">280 руб. в месяц</td>
+                                    <td class="cost__table-text">410 руб. в месяц</td>
+                                    <td class="cost__table-text">530 руб. в месяц</td>
+                                    <td class="cost__table-text">До 3-х человек</td>
+                                </tr>
+                                <tr class="cost__table-line">
+                                    <td class="cost__table-text">От 76 до 100 документов</td>
+                                    <td class="cost__table-text">350 руб. в месяц</td>
+                                    <td class="cost__table-text">470 руб. в месяц</td>
+                                    <td class="cost__table-text">650 руб. в месяц</td>
+                                    <td class="cost__table-text">До 3-х человек</td>
+                                </tr>
+                                <tr class="cost__table-line">
+                                    <td class="cost__table-text">Свыше 100 документов</td>
+                                    <td class="cost__table-text">По договоренности</td>
+                                    <td class="cost__table-text">По договоренности</td>
+                                    <td class="cost__table-text">По договоренности</td>
+                                    <td class="cost__table-text">До 3-х человек</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="cost__table2-div">
+                            <table class="cost__table2">
+                                <tr>
+                                    <th class="cost__table-head2">Количество первичных документов,<br> обрабатываемых в месяц**</th>
+                                    <th class="cost__table-head2" style="width: 172px;">Упрощенная система налогообложения <br>(УСН)</th>
+                                    <th class="cost__table-head2" style="width: 156px;">Упрощенная система налогообложения <br>(УСН) с уплатой НДС</th>
+                                    <th class="cost__table-head2" style="width: 128px;">Подоходный<br> налог с ИП</th>
+                                    <th class="cost__table-head2" style="width: 139px">Подоходный налог<br> с ИП с уплатой НДС</th>
+                                    <th class="cost__table-head2">Количество<br> сотрудников</th>
+                                </tr>
+                                <tr class="cost__table-line">
+                                    <td class="cost__table-text">Нулевая отчетность (нет<br> деятельности)</td>
+                                    <td class="cost__table-text">40 руб. в квартал</td>
+                                    <td class="cost__table-text">60 руб. в квартал</td>
+                                    <td class="cost__table-text">40 руб. в квартал</td>
+                                    <td class="cost__table-text">80 руб. в квартал</td>
+                                    <td class="cost__table-text">-</td>
+                                </tr>
+                                <tr class="cost__table-line">
+                                    <td class="cost__table-text">До 15 документов</td>
+                                    <td class="cost__table-text">120 руб. в месяц</td>
+                                    <td class="cost__table-text">180 руб. в месяц</td>
+                                    <td class="cost__table-text">170 руб. в месяц</td>
+                                    <td class="cost__table-text">250 руб. в месяц</td>
+                                    <td class="cost__table-text">До 3-х человек</td>
+                                </tr>
+                                <tr class="cost__table-line">
+                                    <td class="cost__table-text">От 16 до 35 документов</td>
+                                    <td class="cost__table-text">180 руб. в месяц</td>
+                                    <td class="cost__table-text">230 руб. в месяц</td>
+                                    <td class="cost__table-text">220 руб. в месяц</td>
+                                    <td class="cost__table-text">320 руб. в месяц</td>
+                                    <td class="cost__table-text">До 3-х человек</td>
+                                </tr>
+                                <tr class="cost__table-line">
+                                    <td class="cost__table-text">От 36 до 55 документов</td>
+                                    <td class="cost__table-text">220 руб. в месяц</td>
+                                    <td class="cost__table-text">320 руб. в месяц</td>
+                                    <td class="cost__table-text">260 руб. в месяц</td>
+                                    <td class="cost__table-text">470 руб. в месяц</td>
+                                    <td class="cost__table-text">До 3-х человек</td>
+                                </tr>
+                                <tr class="cost__table-line">
+                                    <td class="cost__table-text">От 56 до 75 документов</td>
+                                    <td class="cost__table-text">250 руб. в месяц</td>
+                                    <td class="cost__table-text">370 руб. в месяц</td>
+                                    <td class="cost__table-text">300 руб. в месяц</td>
+                                    <td class="cost__table-text">430 руб. в месяц</td>
+                                    <td class="cost__table-text">До 3-х человек</td>
+                                </tr>
+                                <tr class="cost__table-line">
+                                    <td class="cost__table-text">От 76 до 100 документов</td>
+                                    <td class="cost__table-text">300 руб. в месяц</td>
+                                    <td class="cost__table-text">420 руб. в месяц</td>
+                                    <td class="cost__table-text">350 руб. в месяц</td>
+                                    <td class="cost__table-text">480 руб. в месяц</td>
+                                    <td class="cost__table-text">До 3-х человек</td>
+                                </tr>
+                                <tr class="cost__table-line">
+                                    <td class="cost__table-text">Свыше 100 документов</td>
+                                    <td class="cost__table-text">По договоренности</td>
+                                    <td class="cost__table-text">По договоренности</td>
+                                    <td class="cost__table-text">По договоренности</td>
+                                    <td class="cost__table-text">По договоренности</td>
+                                    <td class="cost__table-text">До 3-х человек</td>
+                                </tr>
+                            </table>
+                        </div>
+                        
                      </div>
+                     
                      <div class="cost__subtable">
                          <p class="cost__subtable-text">Кадровое делопроизводство = 1 человек / 5,0 руб. в месяц</p>
                          <p class="cost__subtable-text">Обмен документами: почта и мессенджеры</p>
@@ -243,7 +330,7 @@
                 </div>
             </div>
         </section>
-        <section class="explanation">
+        <section class="explanation" id="explanation">
             <div class="wrapper">
                 <div class="explanation__one">
                     <h4 class="explanation__one-title">
@@ -286,7 +373,7 @@
         </section>
     </main>
     <footer>
-        <section class="contacts">
+        <section class="contacts" id="contacts">
             <div class="wrapper">
                 <div class="contacts__wrapper">
                     <div class="contacts__left">
@@ -294,10 +381,12 @@
                             Контакты
                         </h5>
                         <div class="phone__number">
+                            
                             <img src="/img/phone.svg" alt="phone-pic">
                             <a href="tel:80222659147" class="phone">8 022 2659147,</a>
                             <a href="tel:+375296391979" class="phone">+375 29 6391979,</a>
                             <a href="tel:+375298489147" class="phone">+375 29 8489147</a>
+                            
                         </div>
                         <div class="addres">
                             
@@ -317,6 +406,7 @@
             </div>
         </section>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
 
