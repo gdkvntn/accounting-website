@@ -1,5 +1,6 @@
 
-const linkNav = document.querySelectorAll('[href^="#"]'), 
+(function(){
+    const linkNav = document.querySelectorAll('[href^="#"]'), 
     V = 0.5;  
 for (var i = 0; i < linkNav.length; i++) {
     linkNav[i].addEventListener('click', function(e) { 
@@ -21,7 +22,7 @@ for (var i = 0; i < linkNav.length; i++) {
             }
         }
     }, false);
-}
+}}())
 
 
 let btnLegal = document.querySelector('.cost__legal')
@@ -43,10 +44,18 @@ function switchLegal (){
     const burgerItem = document.querySelector('.burger')
     const menu = document.querySelector('.header__nav')
     const closeMenu = document.querySelector('.header__nav-close')
+    const menuLinks = document.querySelectorAll('.header__link')
     burgerItem.addEventListener('click', () => {
         menu.classList.add('header__nav-active')
     })
     closeMenu.addEventListener('click',() => {
         menu.classList.remove('header__nav-active')
     })
+    if(window.innerWidth < 1001){
+        for(let i = 0;i<=menuLinks.length;i++){
+            menuLinks[i].addEventListener('click', () =>{
+                menu.classList.remove('header__nav-active')
+            } )
+        }
+    }
 }())
