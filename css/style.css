@@ -846,7 +846,13 @@ margin-top: 65px;
   color: #0F213E;
   padding-top: 44px;
 }
+
+.contacts__phone{
+  display: flex;
+  align-items: flex-end;
+}
 .phone__number{
+  display: flex;
   padding-top: 40px;
 }
 .phone{
@@ -858,11 +864,20 @@ margin-top: 65px;
   padding-left: 9px;
   margin-bottom: 13px;
 }
-.addres{
+.address{
+  
   margin-top: 9px;
   padding-bottom: 100px;
 }
-.addres-text{
+.address-url{
+  display: flex;
+  text-decoration: none;
+}
+.address-text{
+display: flex;
+}
+.address__info{
+  
   font-weight: normal;
   font-size: 16px;
   line-height: 22px;
@@ -871,7 +886,7 @@ margin-top: 65px;
   padding-left: 12px;
 }
 
-.phone:hover , .addres-text:hover{
+.phone:hover , .address-text:hover{
   opacity: .50;
 }
 .footer__last{
@@ -931,7 +946,7 @@ margin-top: 65px;
     padding-top: 10px;
   }
 
-  .addres{
+  .address{
      padding-bottom: 100px;
   }
 }
@@ -1024,6 +1039,29 @@ margin-top: 65px;
   .header__nav-close-line:last-child{
     transform: translateY(-50%) rotate(-45deg);
   }
+  .contacts__left-title{
+    padding-top: 10px;
+  }
+  .contacts__phone{
+    padding-top: 10px;
+    display: flex;
+    align-items: flex-start;
+  }
+  .phone__number{
+    padding-top: 10px;
+    flex-direction: column;
+  }
+  .phone__number-pic{
+    padding-top: 10px;
+  }
+  .address{
+    padding-bottom: 10px;
+  }
+  .address-text{
+    flex-direction:column;
+    
+  }
+  .address-url{display: flex;}
 }
 
 @media screen and (max-width:768px){
@@ -1089,7 +1127,7 @@ margin-top: 65px;
       padding-top: 10px;
     }
 
-    .addres{
+    .address{
       padding-bottom: 20px;
     }
 }
@@ -1177,18 +1215,20 @@ margin-top: 65px;
       
     }
     .phone__number{
-    
+      flex-direction:row;
       padding-top: 10px;
     }
     .phone{
      color: black;
     }
 
-    .addres{
+    .address{
       
       padding-bottom: 20px;
     }
-    
+    .address-text{
+      flex-direction: row;
+    }
     .contacts__right{
       background-image: url(../img/footer.png);
       background-size: 100%;
@@ -1225,8 +1265,14 @@ margin-top: 65px;
   .see-price{
     text-align: center;
   }
-  .addres{
+  .address{
     padding-bottom: 0;
+  }
+  .phone__number{
+    flex-direction:column;
+  }
+  .address-text{
+    flex-direction: column;
   }
 }
 @media screen and (max-width:414px){

@@ -380,21 +380,31 @@
                         <h5 class="contacts__left-title">
                             Контакты
                         </h5>
+
+                        <div class="contacts__phone">
+                            <div class="phone__number-pic"><img src="img/phone.svg" alt="phone-pic"></div>
                         <div class="phone__number">
                             
-                            <img src="img/phone.svg" alt="phone-pic">
-                            <a href="tel:80222659147" class="phone">8 022 2659147,</a>
-                            <a href="tel:+375296391979" class="phone">+375 29 6391979,</a>
-                            <a href="tel:+375298489147" class="phone">+375 29 8489147</a>
+                            <div class="number__phone"><a href="tel:80222659147" class="phone">8 022 2659147,</a></div>
+                            <div class="number__phone"><a href="tel:+375296391979" class="phone">+375 29 6391979,</a></div>
+                            <div class="number__phone"><a href="tel:+375298489147" class="phone">+375 29 8489147</a></div>
                             
                         </div>
-                        <div class="addres">
+                        </div>
+                        <address class="address">
                             
-                            <address><img src="img/addres.svg" alt="addres-pic">
-                                <a class="addres-text" href="https://www.google.com/maps/place/%D0%90%D0%92%D0%95%D0%9D%D0%A2%D0%A3%D0%A1+%D0%A7%D0%A3%D0%9F/@53.8771689,30.3373211,15z/data=!4m5!3m4!1s0x0:0x85cab33f8ec4db2b!8m2!3d53.8771768!4d30.3373096">212002, г. Могилев, ул. Островского, д. 13, офис 25,26.
+                            
+                                <a class="address-url" href="https://www.google.com/maps/place/%D0%90%D0%92%D0%95%D0%9D%D0%A2%D0%A3%D0%A1+%D0%A7%D0%A3%D0%9F/@53.8771689,30.3373211,15z/data=!4m5!3m4!1s0x0:0x85cab33f8ec4db2b!8m2!3d53.8771768!4d30.3373096">
+                                <div class="address__img"><img src="img/addres.svg" alt="address-pic"></div>
+                                <div class="address-text">
+                                    
+                                    <div class="address__info">212002, г. Могилев, </div>
+                                    <div class="address__info">ул. Островского, д. 13, </div>
+                                    <div class="address__info">офис 25,26.</div>
+                                </div>
                                 </a>
-                            </address>
-                        </div>
+                                    
+                        </address>
                     </div>
                 </div>
                 
@@ -416,62 +426,3 @@
 
 
 
-<!--
-<table class="cost__table">
-    <tr>
-        <th class="cost__table-head">Количество первичных документов, обрабатываемых в месяц**</th>
-        <th class="cost__table-head">Упрощенная система налогообложения (УСН)</th>
-        <th class="cost__table-head">Упрощенная система налогообложения (УСН) с уплатой НДС</th>
-        <th class="cost__table-head">Общая система налогообложения (ОСН)</th>
-        <th class="cost__table-head">Количество сотрудников</th>
-    </tr>
-    <tr class="cost__table-line">
-        <td class="cost__table-text">Нулевая отчетность (нет деятельности)</td>
-        <td class="cost__table-text">40 руб. в квартал</td>
-        <td class="cost__table-text">60 руб. в квартал</td>
-        <td class="cost__table-text">80 руб. в квартал</td>
-        <td class="cost__table-text">-</td>
-    </tr>
-    <tr class="cost__table-line">
-        <td class="cost__table-text">До 15 документов</td>
-        <td class="cost__table-text">130 руб. в месяц</td>
-        <td class="cost__table-text">200 руб. в месяц</td>
-        <td class="cost__table-text">250 руб. в месяц</td>
-        <td class="cost__table-text">До 3-х человек</td>
-    </tr>
-    <tr class="cost__table-line">
-        <td class="cost__table-text">От 16 до 35 документов</td>
-        <td class="cost__table-text">180 руб. в месяц</td>
-        <td class="cost__table-text">260 руб. в месяц</td>
-        <td class="cost__table-text">330 руб. в месяц</td>
-        <td class="cost__table-text">До 3-х человек</td>
-    </tr>
-    <tr class="cost__table-line">
-        <td class="cost__table-text">От 36 до 55 документов</td>
-        <td class="cost__table-text">230 руб. в месяц</td>
-        <td class="cost__table-text">350 руб. в месяц</td>
-        <td class="cost__table-text">430 руб. в месяц</td>
-        <td class="cost__table-text">До 3-х человек</td>
-    </tr>
-    <tr class="cost__table-line">
-        <td class="cost__table-text">От 56 до 75 документов</td>
-        <td class="cost__table-text">280 руб. в месяц</td>
-        <td class="cost__table-text">410 руб. в месяц</td>
-        <td class="cost__table-text">530 руб. в месяц</td>
-        <td class="cost__table-text">До 3-х человек</td>
-    </tr>
-    <tr class="cost__table-line">
-        <td class="cost__table-text">От 76 до 100 документов</td>
-        <td class="cost__table-text">350 руб. в месяц</td>
-        <td class="cost__table-text">470 руб. в месяц</td>
-        <td class="cost__table-text">650 руб. в месяц</td>
-        <td class="cost__table-text">До 3-х человек</td>
-    </tr>
-    <tr class="cost__table-line">
-        <td class="cost__table-text">Свыше 100 документов</td>
-        <td class="cost__table-text">По договоренности</td>
-        <td class="cost__table-text">По договоренности</td>
-        <td class="cost__table-text">По договоренности</td>
-        <td class="cost__table-text">До 3-х человек</td>
-    </tr>
-</table>-->
