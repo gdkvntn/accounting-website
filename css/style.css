@@ -552,8 +552,8 @@ img{
 .outsourcing__wrapper{
   display:flex;
   flex-wrap: wrap;
-  padding-bottom: 65px;
-  border-bottom: 1px solid #E2E2E2;
+  padding-bottom: 112px;
+  
 }
 .outsourcing-left{
   padding-right: 133px;
@@ -608,10 +608,57 @@ img{
 }
 
 /*Outsourcing end */
+/*registration start*/
+.wrapper__registration{
+  background-color: #F4FFF9;
+  max-width: 1280px ;
+  margin: 0 auto;
+}
+.registration__container{
+  display: flex;
+  
+}
+.registration__title{
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 44px;
+  color: #0F213E;
+  
+
+}
+.registration__info{
+  padding: 53px 27px 49px 0;
+}
+.registration__info-text{
+  margin-top: 27px;
+}
+.registration__line{
+  display: flex;
+  
+  padding-left: 60px;
+}
+.line__one{
+    
+    width: 100px;
+    height: 100%;
+    transform: skew(-15deg);
+    background: #22B66D;
+    margin-right: 20px;
+  
+}
+.line__second{
+  margin-right: 60px;
+  width: 100px;
+  height: 100%;
+  transform: skew(-15deg);
+  background: rgba(34, 182, 109, 0.1);
+
+}
+/*registration end*/
 
 /*Services*/
 .services{
-  padding-top: 65px;
+  padding-top: 101px;
   
   
 }
@@ -934,6 +981,7 @@ display: flex;
   .outsourcing-left{
     padding-right: 60px;
   }
+  
   .contacts__wrapper{
     margin-top: 65px;
     display: grid;
@@ -1038,6 +1086,9 @@ display: flex;
   }
   .header__nav-close-line:last-child{
     transform: translateY(-50%) rotate(-45deg);
+  }
+  .registration__line{
+    display: none;
   }
   .contacts__left-title{
     padding-top: 10px;
@@ -1190,6 +1241,13 @@ display: flex;
     width: 100%;
     padding-right: 0;
   }
+  .registration__text2 br{
+    display: none;
+  }
+  .registration__text3 br{
+    display: none;
+  }
+
   .contacts{
     
   background-image: none;
@@ -1305,7 +1363,13 @@ display: flex;
   font-size: 1.5rem;
   line-height: 1.5rem;
 }
-
+.registration__title{
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+}
+.registration__info{
+  padding-right: 0;
+}
 .services-title{
   font-size: 1.5rem;
   line-height: 1.5rem;
